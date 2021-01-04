@@ -1,0 +1,10 @@
+$blue: #0072ef;
+$white: #fff;
+$lightGrey: #D3D3D3;
+$darkGrey:#303030;
+
+@mixin mobile {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }

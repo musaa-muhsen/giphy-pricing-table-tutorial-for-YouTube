@@ -1,0 +1,60 @@
+.pricing-tables {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1000px;
+    .columns {
+        display: flex;
+        flex-direction: row nowrap;
+        @include mobile {
+            flex-direction: column;
+        }
+
+        article {
+            flex: 1;
+            padding: 8px;
+            margin:  0 5px;
+            border: 2px solid $lightGrey;
+            border-radius: 10px;
+            text-align: center;
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            margin: 10px 0 20px 0;
+        }
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            margin: 20px 0;
+            li:nth-child(1) {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            li {
+                margin: 10px 0;
+            }
+        }
+        button {
+            display: block;
+            margin: 0 auto 40px auto;
+            border-radius: 5px;
+            background: $blue;
+            border: none;
+            color: $white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+    }
+}

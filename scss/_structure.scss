@@ -1,0 +1,43 @@
+.main-container {
+    height: 100%;
+    position: relative;
+    text-transform: capitalize;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 40;
+    height: 100%;
+}
+.bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button.stop {
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: $blue;
+        border: none;
+        padding: 10px 20px;
+        color: $white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+
+

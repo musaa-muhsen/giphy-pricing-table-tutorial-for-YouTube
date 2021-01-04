@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   // outline: 1px solid red;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+@import "_toggle";
+@import "_structure";
+@import "_pricing-table";
+@import "_var";
