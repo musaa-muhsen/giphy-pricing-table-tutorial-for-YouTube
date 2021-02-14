@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
    teamPlan = document.querySelector('.team-plan'),
    pricingTitle = document.querySelector('.pricing-title'),
    pricingCards = document.querySelector('.pricing-columns'),
-   toggleColor = document.querySelector('.toggle')
+   toggleColor = document.querySelector('.toggle'),
    darkGrey = '#303030',
    white = '#fff';
 
