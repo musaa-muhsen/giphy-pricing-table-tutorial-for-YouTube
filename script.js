@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
       
     const randomNumData = Math.floor(Math.random() * 49),
     randomWordData = Math.floor(Math.random() * 3);
-    console.log(randomNumData)
+
 
        if (checkbox.checked) {
-           console.log(checkbox.checked)
+           //console.log(checkbox.checked)
            const goodFunc = async () => {
                try {
                    teamPlan.innerHTML = '£90/ year';
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
                    const wordsGood = ['approve', 'happy', 'thumbs up'];
                    const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${wordsGood[randomWordData]}`);
                    const json = await response.json();
-                   console.log(json)
                    bg.style.backgroundImage = `url('${json.data[randomNumData].images.original.url}')`
 
 
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
            }
            goodFunc();
        } else {
-        console.log(checkbox.checked)
+        //console.log(checkbox.checked)
         const badFunc = async () => {
             try {
                 teamPlan.innerHTML = '£12/ month';
@@ -52,10 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const wordsBad = ['sad', 'crying', 'shocked'];
                 const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${wordsBad[randomWordData]}`);
                 const json = await response.json();
-                console.log(json)
                 bg.style.backgroundImage = `url('${json.data[randomNumData].images.original.url}')`
-
-
 
             } catch(err) {
                 console.log(err)
